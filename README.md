@@ -1,0 +1,2 @@
+# Simplify
+Simplify long commands!
