@@ -1,0 +1,246 @@
+{
+  "mod_elements": [
+    {
+      "name": "SpeedCommandProcedure",
+      "type": "procedure",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "speed_command_procedure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/simplify/procedures/SpeedCommandProcedureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Speed",
+      "type": "command",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "simplify",
+      "metadata": {
+        "files": [
+          "src/main/java/net/simplify/command/SpeedCommand.java"
+        ]
+      }
+    },
+    {
+      "name": "Simplify",
+      "type": "command",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "simplify",
+      "metadata": {
+        "files": [
+          "src/main/java/net/simplify/command/SimplifyCommand.java"
+        ]
+      }
+    },
+    {
+      "name": "SimplifyHelp",
+      "type": "procedure",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "simplify_help",
+      "metadata": {
+        "files": [
+          "src/main/java/net/simplify/procedures/SimplifyHelpProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SummonMob",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "summon_mob",
+      "metadata": {
+        "files": [
+          "src/main/java/net/simplify/client/gui/SummonMobScreen.java",
+          "src/main/java/net/simplify/world/inventory/SummonMobMenu.java",
+          "src/main/java/net/simplify/network/SummonMobButtonMessage.java"
+        ]
+      }
+    },
+    {
+      "name": "SummonMobProcedure",
+      "type": "procedure",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "summon_mob_procedure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/simplify/procedures/SummonMobProcedureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "guistate",
+            "type": "map"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "OpenSummonMobGuiProcedure",
+      "type": "procedure",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_summon_mob_gui_procedure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/simplify/procedures/OpenSummonMobGuiProcedureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "EasySummonCommand",
+      "type": "command",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "easy_summon_command",
+      "metadata": {
+        "files": [
+          "src/main/java/net/simplify/command/EasySummonCommandCommand.java"
+        ]
+      }
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {
+      "gui.simplify.summon_mob.label_glowing": "Glowing?",
+      "gui.simplify.summon_mob.NameOfMob": "Mob name",
+      "gui.simplify.summon_mob.Invincible": "",
+      "gui.simplify.summon_mob.tooltip_if_left_empty_will_summon_the_mo": "If left empty will summon the mob at your current position",
+      "gui.simplify.summon_mob.label_x": "X",
+      "gui.simplify.summon_mob.CanPickUpLoot": "",
+      "gui.simplify.summon_mob.label_y": "Y",
+      "gui.simplify.summon_mob.label_z": "Z",
+      "gui.simplify.summon_mob.tooltip_if_the_mob_is_effected_by_gravit": "If the mob is effected by gravity or not",
+      "gui.simplify.summon_mob.label_no_gravity": "Gravity?",
+      "gui.simplify.summon_mob.label_silent": "Silent?",
+      "gui.simplify.summon_mob.label_left_handed": "Left Handed?",
+      "gui.simplify.summon_mob.LeftHanded": "",
+      "gui.simplify.summon_mob.z": "Z value",
+      "gui.simplify.summon_mob.y": "Y value",
+      "gui.simplify.summon_mob.label_soon": "soon",
+      "gui.simplify.summon_mob.x": "X value",
+      "gui.simplify.summon_mob.Glowing": "",
+      "gui.simplify.summon_mob.IsSilent": "",
+      "gui.simplify.summon_mob.label_no_ai": "No Ai?",
+      "gui.simplify.summon_mob.label_more_maybe_coming_soon": "More tags maybe coming",
+      "gui.simplify.summon_mob.label_easy_mob_summoner": "Easy Mob Summoner",
+      "gui.simplify.summon_mob.NoGravity": "",
+      "gui.simplify.summon_mob.label_can_it_pick_up_loot": "Can it pick up loot?",
+      "gui.simplify.summon_mob.NoAI": "",
+      "gui.simplify.summon_mob.button_done": "Done",
+      "gui.simplify.summon_mob.label_invincible": "Invincible?"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "simplify",
+    "modName": "Simplify",
+    "version": "1.0.0",
+    "description": "Simplifies long commands!",
+    "author": "FractalCoder",
+    "websiteURL": "https://mcreator.net",
+    "license": "Academic Free License v3.0",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.20.1",
+    "credits": "All the plugins that do this",
+    "modElementsPackage": "net.simplify",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202300336712
+}
